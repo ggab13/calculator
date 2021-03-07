@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div id="content">
+        <p id="calculator">Calculator</p><p id="name">GGAB13</p>   
+        <div class="display">       
+            <input type="text" class="display-form" value="" onkeypress="return isNumber(event)">
+        </div>            
+        <div class="clear-buttons-grid">
+            <button class="clear-buttons" id="allClear" >AC</button>
+            <button class="clear-buttons" id="clear">C</button>              
+        </div>
+       
+        <div class="number-grid">
+            <button class="numbers" value="1">1</button>
+            <button class="numbers" value="2">2</button>
+            <button class="numbers" value="3">3</button>
+            <button class="numbers" value="4">4</button>
+            <button class="numbers" value="5">5</button>
+            <button class="numbers" value="6">6</button>
+            <button class="numbers" value="7">7</button>
+            <button class="numbers" value="8">8</button>
+            <button class="numbers" value="9">9</button>           
+            <button class="numbers" value="0">0</button>
+            <button class="numbers" value="00">00</button>
+            <button id="point" class="numbers" value="point">.</button>
+        </div>                   
+        <div class="operator-grid">            
+            <button class="operators"id="divide" value="divide">÷</button>
+            <button class="operators"id="multiply" value="multiply">x</button>
+            <button class="operators"id="substract" value="substract">-</button>
+            <button class="operators"id="add" value="add">+</button>          
+            <button class="operators"id="equals" value="equals">=</button>             
+        </div>
+        
+     </div>
+   
+    
+    <script src="calculator.js"></script>
+</body>
+</html>

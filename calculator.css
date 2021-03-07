@@ -1,0 +1,107 @@
+
+#content {           
+        position: relative;          
+        width: 450px;       
+        height: 620px;
+        margin: 100px auto;       
+        border-radius: 10px;
+        border-style: solid;
+        border-width: 5px;
+        border-color: rgb(17, 16, 16);            
+        display: grid;
+        padding: 25px; 
+        font-weight: bold;        
+        background-color: rgba(0, 0, 0, 0.849);      
+        grid-template-columns: 4fr 1fr;
+        grid-template-rows: 1fr 1fr 6fr;
+        grid-gap: 15px;
+        grid-template-areas:
+        "display  display"
+        "clearButtons clearButtons"
+        "number operators";             
+}
+
+#calculator {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    font-size: 35px;
+    top: -20px;
+    left: 30px;
+    color: white;
+}
+#name {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    position: absolute;
+    right: 30px;
+    top: 0px;
+    color: rgba(163, 163, 163, 0.911);    
+    font-style: italic;
+
+}
+.display {       
+    padding-top: 45px;
+    display: grid;
+    grid-template-columns: repeat(1,1fr);    
+    grid-area: display;    
+}
+.display-form {    
+    height: 75px;
+    pointer-events:none;
+    text-align: right;
+    font-size: 30px;    
+}
+
+button {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin: 8px 5px;
+    border-radius: 10px;
+    color: white;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;      
+}
+button:hover{
+    opacity: 0.7;
+}
+.operators {
+    background-color: rgb(43, 147, 231);
+    font-size: 30px;
+}
+
+.clear-buttons{
+    background-color: rgb(221, 62, 41);
+}
+#equals{
+    background-color: rgb(26, 143, 26);
+}
+.numbers{
+    margin: auto;   
+    padding: 0px;
+    width: 90px;
+    height: 90px;
+    font-size: 30px;
+    color: white;
+    background-color: rgba(163, 163, 163, 0.911);    
+}
+
+.operators button {
+    font-size: 25px;
+    font-weight: bold;  
+}
+.clear-buttons-grid{    
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-area: clearButtons;         
+}
+.operator-grid {       
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-area: operators;  
+    padding: 0px;
+    margin: 5px;        
+}
+.number-grid{    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-area: number;         
+}
