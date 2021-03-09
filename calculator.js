@@ -38,10 +38,7 @@ numbers.forEach(number =>{
     });       
 });
 
-point.addEventListener('click', event => {
-    displayValue.value += '.';
-    point.disabled = true;
-});
+
 
 document.addEventListener("keydown", function(event) {
    
